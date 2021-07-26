@@ -9,7 +9,7 @@ const server = http.Server(app);
 const io = socketIO(server);
 
 // 定数
-const PORT = 8080;
+const PORT = 5000;
 
 
 server.listen(PORT,()=>{
