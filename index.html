@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<style type="text/css">
+	body {
+	background-color: #486d46;            /* 背景色 */
+	background-image: url("image/test.jpg"); /* 画像 */
+	background-size: cover;               /* 全画面 */
+	background-attachment: fixed;         /* 固定 */
+	background-position: center center;   /* 縦横中央 */
+	}
+	.header{
+    	text-align: center;
+    	font-size: 45px;
+    	font-family: serif;
+		color: #358F8F;
+	}
+	.footer{
+	text-align: center;
+	font-size: 30px;
+	font-family: serif;
+	color: #446666;
+	}
+	#box1 {
+    padding: 2em 1em;
+    margin: 5em 5em;
+    font-weight: bold;
+    border: solid 3px #358F8F;
+	}
+	#box1 p {
+		margin: 0; 
+		padding: 0;
+		color: #76B3B3;
+	}
+</style>
+
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<body>
+	<header>
+		<h1 class="header">
+			<a>Who are you?</a>
+		</h1>
+	</header>
+	<div id="box1">
+		<p id="ip">あなたのIPアドレス</p>
+	</div>
+	
+<title>My profile</title>
+<script src="/socket.io/socket.io.js"></script>
+<footer>
+	<h1 class="footer">
+		<a>すこーし情報抜いただけ</a>
+	</h1>
+</footer>
+<script type="text/javascript" src="js/client.js"></script>
+</body>
+</html>
