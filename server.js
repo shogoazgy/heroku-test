@@ -20,7 +20,7 @@ var ip = null
 app.get('/', (req, res) => {
     //console.log(req);
     ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
-    console.log(ip)
+    console.log(req)
     res.sendFile(__dirname + '/index.html');
 });
 
